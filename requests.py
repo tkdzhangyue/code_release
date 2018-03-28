@@ -3,7 +3,7 @@ import re
 import requests
 import paramiko
 from build_xls import get_Xls      #txt_to_xls.py
-from selenium import write_branch_1_Jira
+from selenium import write_Web
 import jenkins
 from time import sleep,strftime,localtime
 from mail import Mail
@@ -355,11 +355,11 @@ def main():
     abcdefg = u'*****'   
 
     
-    branch_1 = write_branch_1_Jira(Start_Commit_ID_branch_1,tag_branch_1,All_branch_1,All_Summary_branch_1,abcdefg,'branch_1')
+    branch_1 = write_Web(Start_Commit_ID_branch_1,tag_branch_1,All_branch_1,All_Summary_branch_1,abcdefg,'branch_1')
     logging.info(u'branch_1 is %s'%branch_1)
-    branch_2 = write_branch_1_Jira(Start_Commit_ID_branch_2,tag_branch_2,All_branch_2,All_Summary_branch_2,abcdefg,'branch_2')
+    branch_2 = write_Web(Start_Commit_ID_branch_2,tag_branch_2,All_branch_2,All_Summary_branch_2,abcdefg,'branch_2')
     logging.info(u'branch_2 is %s'%branch_2)
-    branch_3 = write_branch_1_Jira(Start_Commit_ID_branch_1,tag_branch_3,All_branch_1,All_Summary_branch_1,abcdefg,'branch_3')
+    branch_3 = write_Web(Start_Commit_ID_branch_1,tag_branch_3,All_branch_1,All_Summary_branch_1,abcdefg,'branch_3')
     logging.info(u'branch_3 is %s'%branch_3)
     print 'branch_1 is %s'%branch_1
     print 'branch_2 is %s'%branch_2
