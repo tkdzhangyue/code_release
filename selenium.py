@@ -9,7 +9,7 @@ from datetime import date
 
 
 
-def write_Website(commit,tag,All_P,All_Summary,x,a_b_c):
+def write_Web(commit,tag,All_P,All_Summary,x,a_b_c):
     
     #DUE-DATE
     Due_date = strftime("%d/%b/%y",localtime())   
